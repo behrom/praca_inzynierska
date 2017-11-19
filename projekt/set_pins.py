@@ -16,7 +16,7 @@ def save_config(coll, light_pin = -1, hum_temp_pin = -1, soil_moisture_pin = -1)
     if(soil_moisture_pin != -1):
         config["soil_moisture_pin"] = soil_moisture_pin
 
-    print coll.update_one({'_id':'config'}, {"$set": config}, True)    
+    print coll.update_one({'_id':'config'}, {"$set": config}, True)
 
 #run function if was running this script
 if __name__ == "__main__":
